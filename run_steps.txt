@@ -1,0 +1,3 @@
+bison -d deskcal.y 
+flex deskcal.l  (in the lex file this -> #include "deskcal.tab.h", should match with the generated tab.h file by bison)
+gcc deskcal.tab.c lex.yy.c -o deskcal
